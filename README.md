@@ -1,6 +1,6 @@
 # Security Engineering Labs
 
-Hands-on labs built to apply my Microsoft 365 / Intune / endpoint background to security engineering — identity security, SIEM, and EDR. Built while preparing for a transition from Senior Desktop Engineer to Security Engineer at NZX.
+Hands-on labs built to apply my Microsoft 365 / Intune / endpoint background to security engineering — identity security, SIEM, and EDR. Built while preparing for a transition from Senior Desktop Engineer to Security Engineer.
 
 ## Labs
 

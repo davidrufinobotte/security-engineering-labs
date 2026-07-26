@@ -1,6 +1,6 @@
 # CrowdStrike Falcon API — Detection Lab
 
-A hands-on lab to test API access to CrowdStrike Falcon EDR, using a safe simulated attack instead of a real one. Built as a follow-up to the Entra ID + Sentinel lab, using the EDR tool NZX already runs.
+A hands-on lab to test API access to CrowdStrike Falcon EDR, using a safe simulated attack instead of a real one. Built as a follow-up to the Entra ID + Sentinel lab, using the EDR tool.
 
 ## Status: Complete ✅
 

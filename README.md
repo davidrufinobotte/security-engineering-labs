@@ -14,5 +14,5 @@ API access to Falcon EDR, real detection generated via a safe MITRE ATT&CK simul
 Both labs follow the same idea: build something real, break it, fix it, and document what happened — not just follow a tutorial. Each README includes the real problems I hit along the way (expired API, wrong permission scopes, deprecated features, wrong test method) and how I solved them.
 
 ## About
-David Botte — Senior Desktop Engineer at NZX Limited, working toward Security Engineer.
+David Botte — Senior Desktop Engineer, working toward Security Engineer.
 [linkedin.com/in/david-rufino-botte](https://linkedin.com/in/david-rufino-botte)

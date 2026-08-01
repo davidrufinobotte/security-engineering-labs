@@ -36,6 +36,14 @@ Sensor installed, API connected, real detection generated and read back through 
 
 This follows the standard incident response order: Identify → Contain → Eradicate → Recover — not just isolate and immediately undo it.
 
+## Testing across multiple MITRE ATT&CK tactics
+To go beyond a single technique, ran two more Atomic Red Team tests, covering different tactics than the original one:
+
+- **T1082 (System Information Discovery — Discovery tactic)**: ran cleanly, but generated no alert. This is expected — `systeminfo` is a native, extremely common Windows command. On its own, without other suspicious behavior around it, it isn't distinct enough to trigger a detection.
+- **T1112 (Modify Registry — Defense Evasion tactic)**: the test itself was blocked by Falcon's prevention layer (`cmd.exe` was denied access to start) — but the attempt still generated a **High severity Defense Evasion alert**. This shows prevention and detection working together: Falcon didn't just stop the action, it also correctly flagged the attempt as suspicious.
+
+Also hit a real environment issue along the way: Falcon's file-based prevention was deleting the Atomic Red Team test folder before tests could even run. Fixed by creating a scoped file exclusion (`C:\AtomicRedTeam\**`) limited to the test host group only, and confirmed it was applied by checking host group membership, not just waiting.
+
 ## Cost
 Free — 15-day trial, no credit card.
 
